@@ -1,5 +1,5 @@
 
-function App() {
+function Home() {
   return (
     <div>
       <h1>Hello world</h1>
@@ -7,4 +7,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
