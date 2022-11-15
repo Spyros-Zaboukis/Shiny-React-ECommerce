@@ -1,6 +1,8 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Colors from '../../utils/style/Colors'
+import Logo from './../../assets/dark-logo.png'
 
 const StyledLink = styled(Link)`
 padding: 15px;
@@ -13,16 +15,34 @@ ${(props) =>
 }`
 
 
- 
+const StyledNav = styled.nav`
+height : 3rem;
+margin-top: 2rem;
+text-align: right;
+margin-left: 48rem;
+`
+
+const StyledLogo = styled.img`
+transform: rotate(-90deg);
+padding-left: 10rem
+
+`
+
+const StyledTestClass = styled.div`
+display: flex;
+`
 function Header() {
 
     return (
-        <nav>
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/Survey/08">Questionnaire</StyledLink>
-            <StyledLink to="/Freelances">Freelances</StyledLink>
-            <StyledLink to="/Freelances2" $isFullLink>Freelances2</StyledLink>
-        </nav>
+        <StyledTestClass>
+            <StyledLogo src={Logo} alt="logo dark"/>
+            <StyledNav>
+                <StyledLink to="/">Home</StyledLink>
+                <StyledLink to="/Survey/08">Questionnaire</StyledLink>
+                <StyledLink to="/Freelances">Freelances</StyledLink>
+                <StyledLink to="/error404" $isFullLink>Error 404</StyledLink>
+            </StyledNav>
+        </StyledTestClass>
     )
 }
 

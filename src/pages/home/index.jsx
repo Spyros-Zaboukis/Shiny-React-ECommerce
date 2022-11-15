@@ -1,9 +1,53 @@
+import Illustration from './../../assets/home-illustration.svg'
+import styled from 'styled-components'
+import Colors from './../../utils/style/Colors'
+
+const FirstBlockHome = styled.div`
+display: flex;
+background-color: ${Colors.backgroundLight};
+padding-top: 8rem;
+margin-top: -8rem;
+padding-bottom: 3rem;
+`
+const StyledImage= styled.img`
+width: 36rem;
+margin-left : 8rem;
+`
+const StyledTitle= styled.h1`
+margin-left: 6rem;
+margin-top: 8rem;
+font-size: 3rem;
+`
+const StyledButton = styled.button`
+padding: 15px;
+color: #8186a0;
+text-decoration: none;
+font-size: 18px;
+color: white; 
+border-radius: 30px; 
+background-color: ${Colors.primary};
+margin-left: 9rem;
+margin-top: 2rem;
+`
 
 function Home() {
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+
+      <FirstBlockHome>
+
+      <StyledTitle>
+        Repérez vos besoins,<br/> 
+        on s’occupe du reste,<br/> 
+        avec les meilleurs <br/>
+        talents
+        <br/>
+        <StyledButton>Faire le test</StyledButton>
+      </StyledTitle>
+      
+      
+      <StyledImage src={Illustration} alt="image de fond Shiny"/>
+
+    </FirstBlockHome>
   );
 }
 
