@@ -6,14 +6,17 @@ import Colors from '../../utils/style/Colors'
 
 const CardLabel = styled.span`
 color: #5843e4;
-font-size: 22px;
+font-size: 1.6rem;
 font-weight: bold;
+margin-top: 0.8rem;
+margin-bottom: 2rem;
 `
 
 const CardImage = styled.img`
-height: 80px;
-width: 80px;
+height: 60%;
+width: 60%;
 border-radius: 50%;
+margin-left: 4.1rem;
 `
 
 
@@ -30,16 +33,20 @@ const CardWrapper = styled.div`
         box-shadow: 2px 2px 10px #e2e3e9;
     }
 `
-
+const StyledSpan= styled.span`
+font-size: 1.2rem;
+text-align: center;
+margin-top: 1.4rem;
+`
 
 function Card({ label, title, picture }) {
 
     return (
-        <CardWrapper>
-            <CardLabel>{label}</CardLabel>
-            <CardImage src={picture} alt="freelance" />
-            <span>{title}</span>
-        </CardWrapper>
+            <CardWrapper>
+                <CardLabel>{label}</CardLabel>
+                <CardImage src={picture} alt="freelance" />
+                <StyledSpan>{title}</StyledSpan>
+            </CardWrapper>
     )
 }
 
