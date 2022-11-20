@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import DefaultPicture from '../../assets/profile.png'
 import styled from 'styled-components'
-import Colors from '../../utils/style/Colors'
+import colors from '../../utils/style/colors'
 
 
 const CardLabel = styled.span`
@@ -24,7 +24,7 @@ const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding: 15px;
-    background-color: ${Colors.backgroundLight};
+    background-color: ${colors.backgroundLight};
     border-radius: 30px;
     width: 350px;
     transition: 200ms;

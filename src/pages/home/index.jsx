@@ -1,10 +1,10 @@
 import Illustration from './../../assets/home-illustration.svg'
 import styled from 'styled-components'
-import Colors from './../../utils/style/Colors'
+import colors from './../../utils/style/colors'
 
 const FirstBlockHome = styled.div`
 display: flex;
-background-color: ${Colors.backgroundLight};
+background-color: ${colors.backgroundLight};
 padding-top: 8rem;
 margin-top: -8rem;
 padding-bottom: 3rem;
@@ -25,7 +25,7 @@ text-decoration: none;
 font-size: 18px;
 color: white; 
 border-radius: 30px; 
-background-color: ${Colors.primary};
+background-color: ${colors.primary};
 margin-left: 9rem;
 margin-top: 2rem;
 `

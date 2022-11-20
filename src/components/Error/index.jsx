@@ -1,6 +1,6 @@
 import page404 from '../../assets/404.svg' 
 import styled from 'styled-components'
-import Colors from './../../utils/style/Colors'
+import colors from './../../utils/style/colors'
 
 
 const StyledImage= styled.img`
@@ -20,7 +20,7 @@ margin-bottom: 1.2rem;
 `
 
 const StyledBody= styled.div`
-background-color: ${Colors.backgroundLight};
+background-color: ${colors.backgroundLight};
 padding-bottom: 2rem;
 `
 

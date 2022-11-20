@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Colors from '../../utils/style/Colors'
+import colors from '../../utils/style/colors'
 import Logo from './../../assets/dark-logo.png'
 
 const StyledLink = styled(Link)`
@@ -11,7 +11,7 @@ text-decoration: none;
 font-size: 18px;
 ${(props) => 
     props.$isFullLink &&
-    `color: white; border-radius: 30px; background-color: ${Colors.primary};`
+    `color: white; border-radius: 30px; background-color: ${colors.primary};`
 }`
 
 
@@ -38,7 +38,7 @@ function Header() {
             <StyledLogo src={Logo} alt="logo dark"/>
             <StyledNav>
                 <StyledLink to="/">Home</StyledLink>
-                <StyledLink to="/Survey/08">Questionnaire</StyledLink>
+                <StyledLink to="/Survey/1">Questionnaire</StyledLink>
                 <StyledLink to="/Freelances">Freelances</StyledLink>
                 <StyledLink to="/error404" $isFullLink>Error 404</StyledLink>
             </StyledNav>

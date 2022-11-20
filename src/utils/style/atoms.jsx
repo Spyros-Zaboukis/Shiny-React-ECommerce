@@ -34,3 +34,5 @@ export const StyledLink = styled(Link)`
     border-radius: 30px; 
     background-color: ${colors.primary};`}
 `
+
+
