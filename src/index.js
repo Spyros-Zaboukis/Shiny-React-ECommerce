@@ -18,6 +18,7 @@ root.render(
 
     <BrowserRouter>
     <ThemeProvider>
+    <SurveyProvider>
     <GlobalStyle/>
       <Header/>
         <Routes> 
@@ -29,6 +30,7 @@ root.render(
 
         </Routes>
         <Footer/>
+        </SurveyProvider>
         </ThemeProvider>
     </BrowserRouter>
     </React.StrictMode>

@@ -1,7 +1,15 @@
-function Result(){
-    return (
-        <h1>Page result</h1>
-    )
+import { useContext } from 'react'
+import { SurveyContext } from '../../utils/Context'
+
+function Results() {
+  const { answers } = useContext(SurveyContext)
+  console.log(answers)
+
+  return (
+    <div>
+      <h1>Résultats</h1>
+    </div>
+  )
 }
 
-export default Result
+export default Results
